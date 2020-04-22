@@ -1,0 +1,63 @@
+body{
+  font-family: "Roboto";
+  font-size: 16px;
+  background-color: #004d9d;
+  color: #ffffff;
+}
+
+a{
+  color: #ffffff;
+  text-decoration: none;
+}
+
+
+section{
+ /* vh stands for viewport height,meaning it will be relative to the height of our browser window   */
+  height: 100vh;
+  /* width: 100%; */
+  background-image: url("sally_1.jpg");
+  /* our background image will cover the full width and height of our section without skewing or repeating the image   */
+  background-size: cover;
+/*  this will fix the background to the browser viewport rather than to the section,creating a reveal effect as we scroll  */
+  background-attachment: fixed;
+}
+header{
+/* using fixed position allows us to precisely position an element in relation to the browser viewport   */
+  position: fixed;
+  top: 20px;
+  left: 20px;
+}
+footer {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+}
+h1 {
+  font-size: 24px;
+/* margins are the go-to property for when we want to create space between elements on our page.   */
+  margin-bottom: 5px;
+}
+
+/* This will select only a tags that are inside of footer tags  */
+footer a {
+  margin-right: 5px;
+}
+
+/* we can apply styles to elements based on whether we are hovering  over them, this is called a pseudo selector */
+a:hover{
+  color: #dddddd;
+}
+
+
+/* this will apply styles to any element in our html which has a "class" attribute of "image-2" */
+.image-2{
+  background-image: url("sally_2.jpg");
+}
+
+.image-3{
+  background-image: url("sally_3.jpg");
+}
+
+.image-4{
+  background-image: url("sally_4.jpg");
+}
