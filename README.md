@@ -4,6 +4,8 @@ I am taking this Superhi course to get more comfortable with CSS and learn JavaS
 
 ## Week 1 - What I learnt / key concepts
 
+Week 1 was about creating parallax style websites using HTML and CSS.
+
 [Project 1](https://sally-hart-2051.superhi.com/) <br>
 [Project 2](https://lytton-website-1.superhi.com/)
 
