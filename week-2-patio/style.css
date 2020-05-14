@@ -1,0 +1,143 @@
+body{
+  font-family: Lora;
+  font-size: 18px;
+/* line height acts as a multiplier of the font-size (in this case it would be 18 * 1.5 = 27px)   */
+  line-height: 1.5;
+  color: #ffffff;
+/* by default background images will tile/repeat across the whole background of an element ,which in this case is desireable   */
+  background-image: url(background.svg);
+/* this will make our page width fluid up until it reaches 640px width, and then it will stop growing.This is an easy way to make our websites responsive by default  */
+  max-width: 640px;
+
+/* by using auto margins, our column of content is centered on the page   */
+  margin-left: auto;
+  margin-right: auto;
+
+  padding-top: 40px;
+}
+
+
+
+header {
+  background-color: #ffffff;
+/* padding creates space around the outside of our content and pushes the edges of the box away   */
+  padding: 40px;
+}
+
+
+
+nav{
+  background-color: #f05d5d;
+/* we can specify all the padding sides in one shorthand which goes in the same order as a clockface (top,right,bottom + left)   */
+  padding: 20px 40px 20px 40px;
+}
+
+
+/* this will grab only a tags inside of the nav */
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  margin-right: 15px;
+}
+/* these styles will get applied when we hover over each nav link */
+nav a:hover{
+  color: #5000ff;
+  border-bottom: 2px solid #ffffff;
+}
+
+section{
+  background-color: #5000ff;
+  padding: 40px;
+}
+
+h2 {
+  font-size: 36px;
+/*  line-height gets added in equal measure to the top *and* the bottom of text in css,which is different from graphics programs  */
+  line-height: 1.3;
+}
+
+/* these styles will get applied to any elements in our html with a class of "image" */
+.image {
+  padding: 0;
+}
+
+blockquote {
+  font-size: 36px;
+  line-height: 1.3;
+/*  the font-style property allows us to make our text italic  */
+  font-style: italic;
+
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+
+.map{
+/* this will stretch our map image across the entrire width of the section   */
+  max-width: 100%;
+}
+
+
+/* this will grab all our paragraphs inside of our contact section */
+.contact p {
+  margin-top: 20px;
+}
+
+.contact a{
+  color: #ffffff;
+  text-decoration: none;
+/* borders can be added to elements and go around the outside of the padding (but inside of the box)   */
+  border-bottom: 2px solid #f05d5d;
+/*  this will create 1px of space between the content and the border   */
+  padding-bottom: 1px;
+}
+
+
+footer {
+  padding: 5px 20px;
+  background-color: #fff;
+}
+
+
+/* when our screen  width is below 740px ,these styles will be applied,which is an extremely powerful feauture of css.it allows us to conditionally  apply styles at certain screen widths - this is called a media query  */
+
+
+@media (max-width:740px) {
+
+/*  these styles will be applied to *both* the section and the header  */
+  section,
+  header {
+    padding: 20px;
+  }
+
+
+  nav {
+    padding: 10px 20px 10px 20px;
+  }
+  h2,
+  blockquote {
+    font-size: 24px;
+  }
+
+  body{
+    padding-top: 0;
+    font-size: 16px;
+  }
+
+  nav a {
+/* this will force our navigation links to take up all the available width and stack on top of each other ( a bit like header, section and nav  elements)  */
+    display: block;
+/*     padding: 5px; */
+  }
+/*   this will remove the border on mobile/tablet/touch devices */
+  nav a:hover{
+    border: none;
+    padding-bottom: 0;
+  }
+
+  blockquote{
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+}
