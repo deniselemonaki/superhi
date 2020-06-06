@@ -7,5 +7,5 @@ Without overflow,the height of the parent tag is just the height of the normal f
 - `overflow:hidden` is also used when content starts leaking into the gaps between columns,it's known as clearfix.
 - Media queries breaking points for responsive styles
 - `display:none`
-- `text-shadow` and `box-shadow`
+- `text-shadow` and `box-shadow`allow us to give values to specify the  x-axis(horizontal) | y_axis(vertical) | blur-radius(causes the blurred appearance) | spread-radius(will expand the shadow size) | shadow color 
 - `:nth-child selector` to select elements in a sequence e.g to grab the last anchor tag in a series use `a:last-child`
